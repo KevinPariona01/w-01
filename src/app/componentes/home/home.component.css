@@ -2,30 +2,49 @@
     padding-top: 2%;
     padding-left: 8%;
     padding-right: 8%;
-    max-height: 80px;
+    max-height: 120px;
     text-align: center;
   }
   .imgLogo img{
-    max-height: 40px;
+    max-height: 120px;
   }
 .opciones{
     display: flex;
 }
 .mueble{
-    padding: 5%;
+    text-align: center;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 1%;
     width: 49%;
 }
     .mueble img {
-        width: 100%;
-        height: 700px;
+        width: 70%;
+        height: 450px;
     }
+
+    .mueble img:hover{
+        transform: scale(1.2);
+        box-shadow: 0px 0px 10px #000000;
+    }
+
 .ferreteria{
-    padding: 5%;
+    text-align: center;
+    padding-left: 1%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
     width: 49%;
 }
     .ferreteria img {
-        width: 100%;
-        height: 700px;
+        width: 70%;
+        height: 450px;
+    }
+
+    .ferreteria img:hover{
+        transform: scale(1.2);
+        box-shadow: 0px 0px 10px #000000;
     }
 
   @media screen and (max-width: 1000px) {

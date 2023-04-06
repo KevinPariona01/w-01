@@ -17,5 +17,9 @@ export class HomeComponent implements OnInit {
   irFerreteria(){
     this.router.navigate(['ferreteria']);
   }
+
+  irMuebleria(){
+    this.router.navigate(['muebleria']);
+  }
   
 }

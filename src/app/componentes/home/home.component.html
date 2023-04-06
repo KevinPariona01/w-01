@@ -1,17 +1,17 @@
 <div>
   <div class="imgLogo" >
     <div>
-      <img src="assets/img/martin-logo.jpg" >
+      <img src="assets/img/Trujillo.png" >
     </div>
   </div>
   <div class="opciones" >
     <div class="mueble" >  
-      <img src="assets/img/mueble.jpg" >
-      <p><strong>¿Desea muebles?</strong></p>
+      <img (click)="irMuebleria()"   src="assets/img/mueble.jpg" >
+      <h4 style="font-family: 'Times New Roman'"><strong><i>Muebles</i></strong></h4>
     </div>
-    <div class="ferreteria" (click)="irFerreteria()" >
-      <img src="assets/img/ferreteria_vertical.jpg" >
-      <p><strong>¿Desea productos de ferreteria?</strong></p>
+    <div class="ferreteria">
+      <img (click)="irFerreteria()"  src="assets/img/ferreteria_vertical.jpg" >
+      <h4 style="font-family: 'Times New Roman'"><strong><i>Ferreteria</i></strong></h4>
     </div>
   </div>
 </div>

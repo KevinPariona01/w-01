@@ -102,34 +102,6 @@
       text-align: center;
       margin: auto auto;
     }
-    
-    .cardsScroll{
-      margin: auto auto;
-      display: flex;
-      overflow-x: scroll;
-      width: 1000px;
-    }
-  
-    .cardScroll{
-      padding-top: 3%;
-      padding-bottom: 3%;
-      width: 50%;
-      min-width: 50%;
-      text-align: center;
-    }
-    .container1Scroll{
-      padding-top: 5%;
-      padding-bottom: 5%;
-      padding-right: 8%;
-      padding-left: 8%;
-      display: flex;
-      justify-content: center;
-    }
-    .cardScroll img{
-      padding: 1%;
-      width: 300px;
-      height: 200px;
-    }
     .card-body{
       margin: auto auto;
       /* width: 470px; */
@@ -139,7 +111,58 @@
       padding-right: 8%;
       text-align: left;
     }
-  
+    
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+    }
+    
+    .gallery-item img {
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .container1Scroll{
+      padding-top: 5%;
+      padding-bottom: 5%;
+      padding-right: 8%;
+      padding-left: 8%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .cardScroll{
+      padding-top: 3%;
+      padding-bottom: 3%;
+      width: 50%;
+      min-width: 50%;
+      text-align: center;
+    }
+
+    .cardsScroll{
+      margin: auto auto;
+      display: flex;
+      overflow-x: scroll;
+      width: 1000px;
+    }
+
+    .cardScroll img{
+      padding: 1%;
+      width: 300px;
+      height: 200px;
+    }
+
     .cardsScroll::-webkit-scrollbar  {
       background-color: #ffffff;
       border-radius: 20px;
@@ -150,6 +173,7 @@
       background-color: #cf8001;
     }
     
+
     @media screen and (max-width: 1000px) {
       .container{
         padding-bottom: 5%;
@@ -208,10 +232,7 @@
         margin-right: 20px;
         padding: 3%;
       }
-  
-      .card-body{
-        width: 100%;
-      }
+
       .container1Scroll{
         padding-top: 5%;
         padding-bottom: 5%;
@@ -220,6 +241,9 @@
         display: flex;
         justify-content: center;
       }
+
+      
+
       .cardsScroll {
         display: flex;
         flex-wrap: wrap;
@@ -231,7 +255,23 @@
         width: 100%;
         justify-content: center;
       }
-      
+
+      .cardScroll img:hover{
+        transform: scale(1.1);
+      }
+
+      .cardsScroll::-webkit-scrollbar  {
+        display: none;
+      }
+
+      .cardsScroll::-webkit-scrollbar-thumb   {
+        display: none;
+      }
+  
+      .card-body{
+        width: 100%;
+      }
+
       .cardScroll {
         margin-right: 0;
         margin-bottom: 20px;
@@ -240,18 +280,14 @@
         padding: 3%;
         width: 100%;
       }
+
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
       .btn_movil{
         display: none;
       }
-      .cardsScroll::-webkit-scrollbar  {
-        display: none;
-      }
-      .cardsScroll::-webkit-scrollbar-thumb   {
-        display: none;
-      }
-      /* .carousel1 img{
-        height: 100%;
-      } */
   
     }
     
