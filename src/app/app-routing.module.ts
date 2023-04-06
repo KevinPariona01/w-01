@@ -5,9 +5,9 @@ import { FerreteriaComponent } from './componentes/ferreteria/ferreteria/ferrete
 import { MuebleriaComponent } from './componentes/muebleria/muebleria/muebleria.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, pathMatch:'full' },
+  //{ path: '', component: HomeComponent, pathMatch:'full' },
   { path: 'ferreteria', component: FerreteriaComponent, pathMatch:'full' },
-  { path: 'muebleria', component: MuebleriaComponent, pathMatch:'full' },
+  { path: '', component: MuebleriaComponent, pathMatch:'full' },
 ];
 
 @NgModule({

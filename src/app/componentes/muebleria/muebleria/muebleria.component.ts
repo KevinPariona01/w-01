@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,7 +10,9 @@ export class MuebleriaComponent implements OnInit {
 
   navChangeReponsive: boolean = false;
 
-  constructor(public router: Router) { }
+  constructor(
+    public router: Router,
+    ) { }
 
   LISTA_IMAGENES:any = ['camarote1.jpg', 'camarote2.jpg', 'camarote3.jpg'];
 
@@ -111,6 +113,16 @@ export class MuebleriaComponent implements OnInit {
       nav1.style.transform = String;
     });
     }
+  }
+
+  whatsapp(){
+    window.open('https://api.whatsapp.com/send?phone=992258052', '_blank');
+    //https://api.whatsapp.com/send?phone=XXXXXXXXXXX
+  }
+
+  facebook(){
+    window.open('https://www.facebook.com/Industriastrujillo.IT', '_blank');
+    //https://api.whatsapp.com/send?phone=XXXXXXXXXXX
   }
 
 }
